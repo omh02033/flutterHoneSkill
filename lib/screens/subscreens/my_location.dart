@@ -61,7 +61,7 @@ class MyLocationPage extends StatelessWidget {
             padding: EdgeInsets.all(20),
             child: Column(
               children: [
-                SubTop(),
+                SubTop(title: '위치 선택'),
               ],
             ),
           ),
