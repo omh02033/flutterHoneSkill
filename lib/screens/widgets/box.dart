@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:flutterlayout/controllers/main_screen_controller.dart';
 import 'package:get/get.dart';
 
 // ignore: must_be_immutable
