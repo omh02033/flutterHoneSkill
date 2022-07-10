@@ -45,14 +45,20 @@ class _BoxState extends State<Box> {
                 widget.nFuntion!();
               }
             },
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            child: Stack(
+              alignment: Alignment.center,
               children: [
-                Text(widget.title, style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.w700
-                ),),
-                if(widget.nPage != null || widget.nFuntion != null) SvgPicture.asset('assets/next.svg')
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(widget.title, style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w700
+                    ),),
+                    if(widget.nPage != null || widget.nFuntion != null) SvgPicture.asset('assets/next.svg')
+                  ],
+                ),
+                Container(width: 390, height: 30, color: Colors.transparent),
               ],
             ),
           ),
